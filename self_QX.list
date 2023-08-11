@@ -1,14 +1,14 @@
 # 内容：selfHost
 # 数量：11条
-HOST,cf.odysseyplus.site
-HOST,cdn.odylife.org
-HOST,us.odysseyplus.site
-HOST,kr.odysseyplus.site
-HOST,jp.odysseyplus.site
-HOST,jp2.odysseyplus.site
-HOST,pub1.emby.wtf
-HOST,pub2.emby.wtf
-HOST,pub3.emby.wtf
-HOST,1.mgl.gay
-HOST,public.emby.ws
-HOST-SUFFIX,fracis.top
+HOST,cf.odysseyplus.site,Self
+HOST,cdn.odylife.org,Self
+HOST,us.odysseyplus.site,Self
+HOST,kr.odysseyplus.site,Self
+HOST,jp.odysseyplus.site,Self
+HOST,jp2.odysseyplus.site,Self
+HOST,pub1.emby.wtf,Self
+HOST,pub2.emby.wtf,Self
+HOST,pub3.emby.wtf,Self
+HOST,1.mgl.gay,Self
+HOST,public.emby.ws,Self
+HOST-SUFFIX,fracis.top,Self
