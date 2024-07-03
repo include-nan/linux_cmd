@@ -16,14 +16,14 @@ const SEND_KEY = process.env.SEND_KEY
 const UTC8 = new Date().getTime() + new Date().getTimezoneOffset() * 60 * 1000 + 8 * 60 * 60 * 1000;
 
 async function downFile() {
-    const url = 'https://raw.githubusercontent.com/BlueSkyClouds/Script/master/nodejs/iQIYI-bak.js'
+    const url = 'https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js'
     await download(url, './')
 }
 
 async function changeFiele() {
-    let content = await fs.readFileSync('./iQIYI-bak.js', 'utf8')
+    let content = await fs.readFileSync('./iQIYI.js', 'utf8')
     content = content.replace(/var cookie = ''/, `var cookie = '${KEY}'`)
-    await fs.writeFileSync('./iQIYI-bak.js', content, 'utf8')
+    await fs.writeFileSync('./iQIYI.js', content, 'utf8')
 }
 
 async function deleteFile(path) {
@@ -48,7 +48,7 @@ async function start() {
     await changeFiele();
     console.log('替换变量完毕')
     // 执行
-    await exec("node iQIYI-bak.js >> result.txt");
+    await exec("node iQIYI.js >> result.txt");
     console.log('执行完毕')
     const path = "./result.txt";
     let content = "";
